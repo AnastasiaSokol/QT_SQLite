@@ -2,7 +2,7 @@
 #define SECONDDIALOG_H
 
 #include <QDialog>
-
+#include "widget.h"
 namespace Ui {
 class SecondDialog;
 }
@@ -12,8 +12,12 @@ class SecondDialog : public QDialog
     Q_OBJECT
 
 public:
+
     explicit SecondDialog(QWidget *parent = 0);
     ~SecondDialog();
+
+private slots:
+    void on_OkButton_clicked();
 
 private:
     Ui::SecondDialog *ui;
