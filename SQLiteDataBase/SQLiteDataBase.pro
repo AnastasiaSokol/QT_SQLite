@@ -6,7 +6,7 @@
 
 QT       += core gui sql
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 TARGET = SQLiteDataBase
 TEMPLATE = app
@@ -26,12 +26,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         widget.cpp \
-    seconddialog.cpp
+    seconddialog.cpp \
+    editdialog.cpp \
+    qcustomplot.cpp \
+    plotdialog.cpp
 
 HEADERS += \
         widget.h \
-    seconddialog.h
+    seconddialog.h \
+    editdialog.h \
+    qcustomplot.h \
+    plotdialog.h
 
 FORMS += \
         widget.ui \
-    seconddialog.ui
+    seconddialog.ui \
+    editwidget.ui \
+    plot.ui
